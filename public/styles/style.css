@@ -1,0 +1,145 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #051d40;
+    color: white;
+}
+
+header .navbar .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .navbar .logo {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+header .navbar .logo-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header .navbar nav {
+    display: flex;
+    gap: 15px;
+}
+
+header .navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+#service {
+    background-color: white;
+}
+
+#tarifs {
+    background-color: #BACEFF;
+}
+
+#valeurs {
+    background-color: #BACEFF;
+}
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    max-width: 220px;
+    text-align: center;
+}
+
+#contact {
+    background-color: white;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #051d40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .nav-links a,
+footer .social a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header .navbar nav {
+        display: none;
+    }
+
+    header .navbar {
+        justify-content: space-between;
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    header .navbar .logo-title {
+        font-size: 16px;
+    }
+
+    .card {
+        max-width: 180px;
+    }
+
+    section {
+        padding: 30px;
+    }
+}
